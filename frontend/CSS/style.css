@@ -1,0 +1,109 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f9f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h2, h3 {
+  color: #2ecc71;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ecf9ec;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #27ae60;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+table thead {
+  background-color: #2ecc71;
+  color: white;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+canvas {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  table th, table td {
+    font-size: 14px;
+  }
+}
