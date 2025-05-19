@@ -4,19 +4,16 @@ from db_config import db
 from routes.auth import auth_bp
 from routes.transactions import trans_bp
 
-app = Flask(__name__)
+app = Flask(__name__)  # <--- this must be accessible
 CORS(app)
 
-# Database Configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:123456789@localhost/personal_finance'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
-# Register Routes
 app.register_blueprint(auth_bp)
 app.register_blueprint(trans_bp)
-
 
 @app.route('/')
 def home():
