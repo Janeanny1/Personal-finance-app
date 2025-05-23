@@ -3,6 +3,7 @@ from flask_cors import CORS
 from backend.db_config import db
 from routes.auth import auth_bp
 from routes.transactions import trans_bp
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)  
 CORS(app)
