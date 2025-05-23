@@ -4,7 +4,7 @@ from db_config import db
 from routes.auth import auth_bp
 from routes.transactions import trans_bp
 
-app = Flask(__name__)  # <--- this must be accessible
+app = Flask(__name__)  
 CORS(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:123456789@localhost/personal_finance'
