@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from db_config import db
+from backend.db_config import db
 from models import Transaction, Category, Budget  # Make sure Budget is imported
 from datetime import datetime
 
