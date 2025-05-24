@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from backend.db_config import db
-from models import Transaction, Category, Budget  # Make sure Budget is imported
+from backend.models import Transaction, Category, Budget  # Make sure Budget is imported
 from datetime import datetime
 
 trans_bp = Blueprint('trans', __name__)
